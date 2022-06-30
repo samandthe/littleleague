@@ -1,0 +1,120 @@
+* {
+box-sizing:border-box;
+}
+body {
+    background-image: url(../images/2stripe.png), linear-gradient( linen, rgb(192, 175, 151));
+    background-size: 2rem, auto;
+    background-repeat: repeat, no-repeat;
+    background-attachment:fixed, fixed;
+    font-family: 'Lily Script One', cursive;
+}
+header {
+    text-align: center;
+    color:midnightblue;
+    text-shadow: .15em .15em firebrick;
+    margin: 0 auto;
+    padding: 0;
+}
+h1 {
+    font-size: 6rem;
+    padding-bottom: 1rem;
+    margin: 1rem auto;
+    line-height: 1;
+}
+main {
+    margin: 0 auto;
+    padding: 0;
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none;
+}
+.cardouterblue, .cardouterred {
+    border-radius: 15px;
+    border-right:rgba(192, 175, 151, 0.6) 4px solid;
+    border-bottom:rgb(192, 175, 151, 0.6) 4px solid;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    position: relative;
+    margin-top: 1rem;
+}
+.cardouterblue {
+    background-color:midnightblue;
+}
+.cardouterblue a {
+    color: firebrick;
+}
+.cardouterred {
+    background-color:firebrick;
+}
+.cardouterred a {
+    color: midnightblue;
+}
+.cardphoto {
+    width: 20vw;
+    min-width: 15rem;
+    margin: 0 auto;
+    height: 30vw;
+    min-height: 22rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+.cardphoto h3 {
+    position: absolute;
+    text-align: end;
+    margin-right: .25em;
+    bottom: .125rem;
+    right: 1.5vw;
+    font-size: calc(2rem + 1.5vw);
+    line-height: 1;
+    text-shadow: .125rem .125rem linen;
+}
+.cardphoto h3:hover {
+    bottom: .3rem;
+}
+.cardphoto h3:active {
+    bottom: .125rem;
+}
+#photo1 {
+    background-image: url(../images/baseball1.jpg);
+}
+#photo2 {
+    background-image: url(../images/caitlin-conner-i_vYjW5A6NU-unsplash.jpg);
+}
+#photo3 {
+    background-image: url(../images/josh-hemsley-e-f17L4EBBc-unsplash.jpg);
+}
+#photo4 {
+    background-image: url(../images/mark-duffel-iZtPLrobMFI-unsplash.jpg);
+}
+@media screen and (max-width: 1024px) {
+    .cardouterblue, .cardouterred {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        font-family: 'Lily Script One', cursive;
+        text-align: center;
+        color:midnightblue;
+        text-shadow: .15em .15em firebrick;
+        margin: 0 auto;
+        padding: 0;
+        z-index: 2;
+    }
+    h1 {
+        font-size: 15vw;
+        padding: 0;
+        margin: 1rem auto;
+    }
+    .cardphoto h3:active {
+        bottom: .1rem;
+    }
+}
